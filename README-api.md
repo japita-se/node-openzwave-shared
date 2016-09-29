@@ -171,4 +171,10 @@ zwave.getSendQueueCount();
 zwave.requestAllConfigParams(nodeId);
 zwave.requestConfigParam(nodeId, paramId);
 zwave.setConfigParam(nodeId, paramId, paramValue, <sizeof paramValue>);
+
 ```
+For example, to get the configuration parameters of NODE 4:
+```
+zwave.requestAllConfigParameters(4)
+```
+will emit 'node ready' and 'value changed' events.
